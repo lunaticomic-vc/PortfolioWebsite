@@ -1,0 +1,45 @@
+#hoverEffect:hover {
+    transform: translateX(20px); /* Moves the element 20px to the right on hover */
+}
+
+.cover {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing {
+    font-size: 2em;
+    color: #00ff00; /* Bright green text for typing effect */
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.typing {
+    position: relative; /* Or 'absolute' if inside a relatively positioned parent */
+    z-index: 1; /* Ensure it doesn't overlay other elements unexpectedly */
+    width: auto; /* Adjust width as necessary */
+    margin: auto; /* Center if necessary */
+    top: auto; /* Adjust if needed */
+    left: auto; /* Adjust if needed */
+}
+
+.typing {
+    z-index: 1; /* Lower than other content that should appear above it */
+}
+
+.container { /* The parent container of the typing effect */
+    overflow: visible; /* Ensures content is not hidden */
+}
+
+.typing {
+    height: auto; /* Or specify a fixed height */
+}
+
+body, html {
+    background-color: black;
+}
